@@ -1,0 +1,11 @@
+language: java
+
+before_install:
+  - chmod +x gradlew
+
+before_script:
+  - ./gradlew jar
+
+script:
+- chmod +x run_tests.sh
+- ./run_tests.sh
