@@ -27,7 +27,7 @@ jar {
 sourceSets {
     main {
         java {
-            srcDirs = ['src']
+            srcDirs = ['src/main/kotlin']
         }
     }
     test {
