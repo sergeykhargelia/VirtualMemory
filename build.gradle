@@ -4,13 +4,25 @@ plugins {
 }
 
 group 'org.example'
-version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
 }
 
 mainClassName = "main"
+
+jar {
+    manifest {
+        attributes 'Main-Class': mainClassName
+    }
+
+    from sourceSets.main.output
+
+    dependsOn configurations.runtimeClasspath
+    from {
+        configurations.runtimeClasspath.findAll { it.name.endsWith('jar') }.collect { zipTree(it) }
+    }
+}
 
 sourceSets {
     integTest {
