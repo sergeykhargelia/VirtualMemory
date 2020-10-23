@@ -25,6 +25,16 @@ jar {
 }
 
 sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+    test {
+        java {
+            srcDirs = ['src/test/kotlin']
+        }
+    }
     integTest {
         compileClasspath += sourceSets.main.output
         runtimeClasspath += sourceSets.main.output
