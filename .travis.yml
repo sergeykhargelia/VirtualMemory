@@ -1,0 +1,7 @@
+language: java
+
+before_script:
+  - ./gradlew jar
+
+script:
+- ./run_tests.sh
