@@ -1,0 +1,12 @@
+Result for FIFO algorithm:
+Number of changes: 20
+Sequence of answers: 0 0 1 2 1 2 1 2 1 2 0 1 2 0 1 2 1 2 0 1 0 2 0 0 0 0 1 2 1 2 
+
+Result for LRU algorithm:
+Number of changes: 19
+Sequence of answers: 0 0 1 2 1 2 1 2 1 2 0 1 2 0 2 0 2 1 0 1 0 2 0 0 0 0 2 1 2 1 
+
+Result for OPT algorithm:
+Number of changes: 16
+Sequence of answers: 0 0 2 0 1 0 2 2 2 0 0 1 2 0 2 0 2 1 0 1 0 2 0 0 0 0 1 2 1 2 
+
