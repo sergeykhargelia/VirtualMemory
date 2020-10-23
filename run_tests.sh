@@ -7,14 +7,14 @@ do
   if [[ $? != 0 ]]
   then
     echo "Test $current_test: Failed"
-    error_count=$($error_count + 1)
+    let "error_count=error_count+1"
     continue
   fi
   if (diff "data/output$current_test.txt" check.txt)
   then
     echo "Test $current_test: Passed"
   else
-    error_count=$($error_count + 1)
+    let "error_count=error_count+1"
     echo "Test $current_test: Failed"
   fi
 done
